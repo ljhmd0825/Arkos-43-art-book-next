@@ -1,0 +1,23 @@
+ <theme>
+
+   <view name="system">
+
+      <helpsystem name="help">
+         <origin>00 0.5</origin>
+         <pos>0.01 0.97</pos>
+		 <fontSize>0.028</fontSize>
+      </helpsystem>
+   </view>
+
+   <view name="basic,detailed,video">
+
+      <helpsystem name="help">
+         <origin>0 0.5</origin>
+         <pos>0.012 0.97</pos>
+		 <fontSize>0.028</fontSize>
+      </helpsystem>
+
+   </view>
+
+</theme>
+
