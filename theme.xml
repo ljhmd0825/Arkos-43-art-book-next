@@ -10,9 +10,6 @@ license:       creative commons CC-BY-NC-SA
 
    <!-- Variables -->
    <variables>
-      <fontBold>./_inc/fonts/PretendardGOV-Bold.otf</fontBold>
-      <fontLight>./_inc/fonts/PretendardGOV-Light.otf</fontLight>
-      <fontRegular>./_inc/fonts/PretendardGOV-Regular.otf</fontRegular>
       <fontLogo>./_inc/fonts/ChangaOne-Italic.ttf</fontLogo>
       <spacerImage>./_inc/images/space.png</spacerImage>
    </variables>
@@ -31,12 +28,12 @@ license:       creative commons CC-BY-NC-SA
    <!-- <include>./colors.xml</include> -->
 
    <!-- Fonts -->
-   <subset name="fonts" displayName="Font Size">
-      <include name="default" displayName="Default" />
-      <include name="custom" displayName="Custom" />
+   <subset name="fontt" displayName="Font Type">
+      <include name="font1" displayName="PretendardGOV">./font1.xml</include>
+      <include name="font2" displayName="NanumSquareNeo">./font2.xml</include>
+      <include name="font3" displayName="Oxygen">./font3.xml</include>
    </subset>
-
-   <!-- System View Style -->
+<!--    System View Style -->
    <subset name="system-view-style" displayName="System View: Style">
       <include name="multi" displayName="Multi Artwork">./systemview-multi.xml</include>
       <include name="centered-one-logo" displayName="Centered Artwork (Single Logo)">./systemview-centered-one-logo.xml</include>
@@ -177,8 +174,8 @@ license:       creative commons CC-BY-NC-SA
          <secondaryColor>${gamelistListTextlistUnselectedColor}</secondaryColor>
          <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
          <zIndex>5</zIndex>
-         <fontSize>0.038</fontSize><!-- 32 -->
-         <lineSpacing>1.5125</lineSpacing>
+<!--          <fontSize>0.038</fontSize>
+         <lineSpacing>1.5125</lineSpacing> -->
       </textlist>
       <image name="gamelist-background" extra="true">
          <origin>0 0</origin>
@@ -313,7 +310,7 @@ license:       creative commons CC-BY-NC-SA
    <view name="menu">
       <menuText name="menutitle">
          <fontPath>${fontBold}</fontPath>
-         <fontSize>0.045</fontSize> <!-- 0.045 -->
+<!--          <fontSize>0.045</fontSize> -->
          <color>ffffff</color>
       </menuText>
       <menuText name="menufooter">
@@ -323,7 +320,7 @@ license:       creative commons CC-BY-NC-SA
       </menuText>
       <menuText name="menutext">
          <fontPath>${fontBold}</fontPath>
-         <fontSize>0.038</fontSize> <!-- 0.036 -->
+<!--          <fontSize>0.038</fontSize> -->
          <color>ffffff77</color>
          <separatorColor>ffffff11</separatorColor>
          <selectedColor>ffffff</selectedColor>
@@ -368,11 +365,5 @@ license:       creative commons CC-BY-NC-SA
          <iconFastShutdown>./_inc/images/menu-icon-shutdown.svg</iconFastShutdown>
       </menuIcons>
    </view>
-
-   <!-- Aspect Ratio -->
-<!--    <include ifSubset="aspect-ratio:1-1">./aspect-ratio-1-1.xml</include> -->
-
-   <!-- Custom Fonts -->
-   <include ifSubset="fonts:custom">${themeCustomizationsPath}fonts.xml</include>
 
 </theme>
